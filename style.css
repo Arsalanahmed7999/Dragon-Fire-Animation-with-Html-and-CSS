@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+
+.container{
+    display: flex;
+    height: 400px;
+    width: 600px;
+    box-shadow: 3px 3px 4px orangered;
+    position: relative;
+}
+
+.dragon{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 10px;
+    left: 15px;
+}
+
+.fire{
+    height: 5px;
+    position: absolute;
+    background-color: orangered;
+    top: 38px;
+    left: 180px;
+    border-radius: 10px;
+    animation: trans 0.3s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes trans {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 400px;
+    }
+}
